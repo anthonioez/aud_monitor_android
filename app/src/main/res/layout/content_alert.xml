@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutRow"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" android:gravity="center" android:orientation="vertical"
+        android:padding="20dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="Price Below"
+                android:textColor="@color/text" android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/textPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="8" android:textColor="@color/text"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right"
+                android:text="$10" android:textColor="@color/text"
+                android:textSize="18sp"/>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/switchType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginRight="10dp"/>
+
+            <SeekBar
+                android:id="@+id/seekPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" android:max="100" android:progress="0"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical" android:layout_marginTop="10dp"
+            android:gravity="right|center_vertical" android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonDec"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_remove_white_48dp"/>
+
+            <ImageButton
+                android:id="@+id/buttonInc"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_add_white_48dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
